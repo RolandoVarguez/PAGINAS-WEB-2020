@@ -13,5 +13,6 @@ namespace CONTROL_INVENTARIO.Controllers
         {
             return View();
         }
+
     }
 }

@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="bg-gradient-success text-white">
+    <br />
+    <h1 class="text-center"><b>Bienvenido de Nuevo!</b></h1>
+        <hr />
+        <br />
+    <div>
+         <h3 class="text-center">
+        ¿Que deseas hacer?
+        </h3>
+    </div>
+
+            <br />
+            <br />
+
+    <div class="container col-md-12 ">
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        @Html.ActionLink("Ver los Productos Registrados ", "Index", "Products", null, new { @class = "btn btn-lg btn-outline-success text-white" })
+        &nbsp; &nbsp; 
+        @Html.ActionLink("Agregar un Producto Nuevo", "Create", "Products", null, new { @class = "btn btn-lg btn-outline-success text-white" })
+    </div>
+
+        <br />
+        <br />
+
+    <div class="container col-md-12">
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        @Html.ActionLink("Ver Proveedores Registrados", "Index", "Suppliers", null, new { @class = "btn btn-lg btn-outline-success text-white" } )
+        &nbsp; &nbsp; &nbsp;
+        @Html.ActionLink("Agregar un Proveedor Nuevo", "Create", "Suppliers", null, new { @class = "btn btn-lg btn-outline-success text-white" })
+    </div>
+
+        <br /><br />
+        <br /><br />
+
+</div>

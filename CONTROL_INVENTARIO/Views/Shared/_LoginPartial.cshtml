@@ -10,26 +10,14 @@
             @Html.ActionLink("Hola! " + User.Identity.GetUserName(), "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })
         </li>
 
-       <li class="nav-item">
-            <a class="REPA nav-link" href="@Url.Action("Index","Suppliers")">Repartidores</a>
-        </li>
-        <li class="nav-item">
-            <a class="REPA nav-link" href="@Url.Action("Index","Products")">Productos</a>
-        </li>
-
         <li><a href="javascript:document.getElementById('logoutForm').submit()">Cerrar Sesion</a></li>
     </ul>
     }
 }
 else
 {
-<ul class="nav navbar-nav navbar-right">
-    <li class="nav-item">
+<ul class="nav navbar-nav navbar-right">   
     <a class="nav-link" href="@Url.Action("Register","Account")">Registrarse</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="@Url.Action("Login","Account")">Iniciar Sesion</a>
-    </li>
-    
+    <a class="nav-link" href="@Url.Action("Login","Account")">Iniciar Sesion</a>    
 </ul>
 }
