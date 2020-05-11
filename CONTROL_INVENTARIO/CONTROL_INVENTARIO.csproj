@@ -1795,6 +1795,7 @@
     <Content Include="Content\img\favicon.png" />
     <Content Include="Content\img\features.jpg" />
     <Content Include="Content\img\hero-bg.jpg" />
+    <Content Include="Content\img\imgPerfil.jpg" />
     <Content Include="Content\img\portfolio\portfolio-1.jpg" />
     <Content Include="Content\img\portfolio\portfolio-2.jpg" />
     <Content Include="Content\img\portfolio\portfolio-3.jpg" />

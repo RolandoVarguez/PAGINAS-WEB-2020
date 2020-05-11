@@ -2,9 +2,10 @@
 @model LoginViewModel
 @{
     ViewBag.Title = "Iniciar Sesion";
+  
 }
 
-
+<br /><br />
 <div class="masthead">
     <div class="masthead-content space">
         <div class="container">
@@ -42,6 +43,7 @@
                     <div class="form-group">
                         <div class="col-md-offset-2 col-md-10">
                             <input type="submit" value="Iniciar Sesion" class=" R0 btn btn-outline-success" />
+                            <a href="@Url.Action("Index","Home")" class="btn btn-danger">Volver a Inicio</a>
                         </div>
                     </div>
                  
