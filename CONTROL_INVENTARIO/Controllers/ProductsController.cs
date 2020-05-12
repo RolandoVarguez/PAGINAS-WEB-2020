@@ -120,6 +120,12 @@ namespace CONTROL_INVENTARIO.Controllers
             return RedirectToAction("Index");
         }
 
+        public ActionResult ProductBySupplier(int supplierId)
+        {
+            var products = db.Products.Where(p => p.SupplierID == supplierId).ToList();
+            return View(products);
+        }
+
         protected override void Dispose(bool disposing)
         {
             if (disposing)
