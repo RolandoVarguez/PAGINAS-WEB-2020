@@ -10,6 +10,7 @@ using CONTROL_INVENTARIO.Models;
 
 namespace CONTROL_INVENTARIO.Controllers
 {
+    [Authorize]
     public class ProductsController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
@@ -62,6 +63,7 @@ namespace CONTROL_INVENTARIO.Controllers
         }
 
         // GET: Products/Edit/5
+        [Authorize]
         public ActionResult Edit(int? id)
         {
             if (id == null)
